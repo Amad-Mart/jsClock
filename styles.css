@@ -68,13 +68,33 @@ body{
     position: absolute;
     bottom: 50%;
     left: 50%;
-    width: 10px;
-    height: 40%;
     background-color: black;
+    border: 1px solid white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     transform-origin: bottom;
+    z-index: 10;
     /*transform translateX translates object by agrument*/
     transform: translateX(-50%) rotate( 
         calc(var(--rotation) * 1deg) /*calc() * 1deg converts to degrees */
         );
 
+}
+
+.clock .hand.second{
+    width: 3px;
+    height: 45%;
+    background-color: red;
+}
+
+.clock .hand.minute{
+    width: 7px;
+    height: 40%;
+    background-color: black;
+}
+
+.clock .hand.hour{
+    width: 10px;
+    height: 35%;
+    background-color: black;
 }
